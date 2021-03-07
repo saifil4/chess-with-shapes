@@ -1,0 +1,17 @@
+<div style="text-align: center;">
+  <div [ngClass]="Player1Class">Player 1</div>
+  <div [ngClass]="Player2Class">Player 2</div>
+  <div *ngFor="let b of Board">
+    <div *ngFor="let s of b.Row" [id]="s.Id" [ngClass]="s.BoxClass" (click)="OnBoxClick(s)">
+      <div [id]="s.Id+s.PieceId" [ngClass]="s.PieceClass">
+
+      </div>
+      <span class="box-label">
+        {{s.Id}}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

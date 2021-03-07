@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: "roboto";
+}
+.box {
+    background: #f3f4f7;
+    height: 100px;
+    width: 100px;
+    border-left: 2px solid white;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.player-label {
+    display: inline-block;
+    width: 250px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.player-label.player2-active {
+    background: #00B8D9;
+    color: white;
+}
+
+.player-label.player1-active {
+    background: #FF5630;
+    color: white;
+}
+
+.box-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    opacity: 50%;
+    font-family: 'roboto';
+}
+
+.box.selected {
+    background: #E3FCEF;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.triangle.red-down {
+    border-top: 30px solid #FF5630;
+}
+
+.triangle.blue-up {
+    border-bottom: 30px solid #00B8D9;
+}
+
+.square {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.square.red {
+    background: #FF5630;
+}
+
+.square.blue {
+    background: #00B8D9;
+}
+
+.line {
+    height: 30px;
+    width: 10px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.line.red {
+    background: #FF5630;
+}
+
+.line.blue {
+    background: #00B8D9;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+
+.dot.red {
+    background: #FF5630;
+}
+
+.dot.blue {
+    background: #00B8D9;
+}
